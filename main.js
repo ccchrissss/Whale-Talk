@@ -1,5 +1,7 @@
 var input = 'My name Mac Miller, who the ballz are you!?';
 
+// var input = 'turpentine and turtles';
+
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 var resultsArray = [];
@@ -7,43 +9,31 @@ var resultsArray = [];
 // console.log(input.length);
 
 for (let i = 0; i < input.length; i++) {
-//    const inputChar = input[i];
+   const inputChar = input[i];
 
-    // if (inputChar === 'e') {
-    if (input[i] === 'e') {
+    if (inputChar === 'e') {
         resultsArray.push(input[i]);
     };
 
-    // if (inputChar === 'u') {
-    if (input[i] === 'u') {
+    if (inputChar === 'u') {
         resultsArray.push(input[i])
     };
    
     // console.log(i, 'outer');
 
     for (let j = 0; j < vowels.length; j++) {
-        // const inputVowels = vowels[j];
+        const inputVowels = vowels[j];
 
         // console.log(j, 'inner');
         
-        // if (inputChar === inputVowels) {
-        if (input[i] === vowels[j]) {
+        if (inputChar === inputVowels) {
             // console.log(inputChar);
-            // resultsArray.push(inputChar);
-            resultsArray.push(input[i])
+            resultsArray.push(inputChar);
         };
     };
 };
 
 // console.log(resultsArray);
-
-// var resultString = resultsArray.map(element => {
-//     return element.toUpperCase();
-
-// }
-
-// );
-
 
 const resultString = resultsArray.join('').toUpperCase();
 
